@@ -3,7 +3,7 @@ title: "Updating an R Package: A Complete Development Workflow"
 author: "Ronald G. Thomas"
 date: "2026-02-11"
 categories: [r, package-development, git]
-description: "I did not really understand the full lifecycle of modifying an R package until I had to push a feature branch through CI/CD and watch it either pass or fail on three operating systems. This post walks through the entire process."
+description: "The full lifecycle of modifying an R package becomes visible only when a feature branch goes through CI/CD and either passes or fails on three operating systems. This post walks through the entire process."
 image: "media/images/hero.png"
 document-type: "blog"
 draft: false
@@ -27,11 +27,10 @@ workflow.*
 
 # Introduction
 
-I did not really understand how much discipline
-goes into modifying an R package until I tried to
-push a change to one of my own projects and
-watched CI fail on three platforms simultaneously.
-It turns out that editing an R file is the easy
+Modifying an R package takes more discipline than
+it appears to. I pushed a change to one of my own
+projects and watched CI fail on three platforms
+simultaneously. Editing an R file is the easy
 part; the surrounding workflow of branching,
 documenting, testing, building, and integrating
 with GitHub Actions is what separates a quick fix
